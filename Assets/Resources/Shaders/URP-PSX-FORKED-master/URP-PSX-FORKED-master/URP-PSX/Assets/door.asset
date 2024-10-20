@@ -1,6 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7268622276910365992
+--- !u!114 &-2977141782602717052
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a1bd58dd7548198609eabd8ae2bb7d, type: 3}
+  m_Name: Pixelation
+  m_EditorClassIdentifier: 
+  active: 0
+  widthPixelation:
+    m_OverrideState: 1
+    m_Value: 512
+  heightPixelation:
+    m_OverrideState: 1
+    m_Value: 256
+  colorPrecision:
+    m_OverrideState: 1
+    m_Value: 16
+--- !u!114 &-2324384373427907936
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,29 +101,24 @@ MonoBehaviour:
   grilleShift:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1}
---- !u!114 &-2649047749314681680
+--- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 3
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a1bd58dd7548198609eabd8ae2bb7d, type: 3}
-  m_Name: Pixelation
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: door
   m_EditorClassIdentifier: 
-  active: 0
-  widthPixelation:
-    m_OverrideState: 1
-    m_Value: 512
-  heightPixelation:
-    m_OverrideState: 1
-    m_Value: 256
-  colorPrecision:
-    m_OverrideState: 1
-    m_Value: 16
---- !u!114 &-758010384845797820
+  components:
+  - {fileID: 2954862673193207859}
+  - {fileID: -2977141782602717052}
+  - {fileID: 2310772592203520689}
+  - {fileID: -2324384373427907936}
+--- !u!114 &2310772592203520689
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,24 +143,7 @@ MonoBehaviour:
   ditherScale:
     m_OverrideState: 1
     m_Value: 4.67
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: URP-PSX Volume Profile
-  m_EditorClassIdentifier: 
-  components:
-  - {fileID: 169896938054019971}
-  - {fileID: -2649047749314681680}
-  - {fileID: -758010384845797820}
-  - {fileID: -7268622276910365992}
---- !u!114 &169896938054019971
+--- !u!114 &2954862673193207859
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,10 +164,10 @@ MonoBehaviour:
     m_Value: 4.7
   fogColor:
     m_OverrideState: 1
-    m_Value: {r: 0.6698113, g: 0, b: 0, a: 0}
+    m_Value: {r: 0.46226418, g: 0, b: 0, a: 0}
   ambientColor:
     m_OverrideState: 1
-    m_Value: {r: 0.49056602, g: 0, b: 0, a: 0}
+    m_Value: {r: 0.3584906, g: 0, b: 0, a: 0}
   fogNear:
     m_OverrideState: 0
     m_Value: 0

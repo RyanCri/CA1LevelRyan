@@ -25,7 +25,6 @@ public class changeScene : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 targetScript.FadeToLevel(SceneToLoad.name);
-                print(SceneToLoad.name);
             }
         }
     }

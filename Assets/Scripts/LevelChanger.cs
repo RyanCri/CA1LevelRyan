@@ -25,6 +25,14 @@ public class LevelChanger : MonoBehaviour
 
     public void OnFadeComplete()
     {
+        SceneManager.LoadScene("DoorDimension");
+        print(levelToLoad);
+    }
+
+    public void LoadLevel()
+    {
+        print("yo");
+        aniamtor.SetTrigger("FadeOut");
         SceneManager.LoadScene(levelToLoad);
     }
 }
