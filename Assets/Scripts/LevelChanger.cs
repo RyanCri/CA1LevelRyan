@@ -10,12 +10,6 @@ public class LevelChanger : MonoBehaviour
 
     private string levelToLoad;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void FadeToLevel(string levelName)
     {
         levelToLoad = levelName;
@@ -23,16 +17,14 @@ public class LevelChanger : MonoBehaviour
 
     }
 
+    public void FadeOut()
+    {
+        aniamtor.SetTrigger("FadeOut");
+    }
+
     public void OnFadeComplete()
     {
         SceneManager.LoadScene("DoorDimension");
         print(levelToLoad);
-    }
-
-    public void LoadLevel()
-    {
-        print("yo");
-        aniamtor.SetTrigger("FadeOut");
-        SceneManager.LoadScene(levelToLoad);
     }
 }
