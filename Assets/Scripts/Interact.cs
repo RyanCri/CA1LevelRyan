@@ -39,6 +39,7 @@ public class Interact : MonoBehaviour
                 Item.SetActive(false);
                 InteracterSound.Play();
                 Exit.SetActive(true);
+                print("check");
                 // gameObject.SetActive(false);
             }
         }

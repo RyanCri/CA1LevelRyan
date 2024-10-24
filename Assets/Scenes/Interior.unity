@@ -7742,7 +7742,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f0ad1facf49f02a498dc206fe9f7a015, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.291
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9634,7 +9634,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f0ad1facf49f02a498dc206fe9f7a015, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.384
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10481,8 +10481,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: field of view
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 20437472682476688, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103969153859672, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: defaultFOV
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
