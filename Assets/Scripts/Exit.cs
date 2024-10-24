@@ -22,6 +22,7 @@ public class Exit : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                print("check");
                 SceneManager.LoadScene("End");
                 
                 Cursor.lockState = CursorLockMode.None;
